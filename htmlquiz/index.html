@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css"> <!-- ✅ Fixed typo -->
+</head>
+<body>
+    <div class="container">
+        <div id="question_container" class="hide">
+            <div id="question" class="question-text"></div> <!-- ✅ Added -->
+            <div id="answer_buttons" class="btn_grid">
+                <!-- Buttons will be dynamically inserted by JS -->
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start_btn" class="start_btn btn">Start</button>
+            <button id="next_btn" class="next_btn btn hide">Next</button>
+        </div>
+    </div>
+
+    <div class="score">
+        Score: <span id="right_answer">0</span>    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
